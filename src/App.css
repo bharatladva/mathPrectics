@@ -1,0 +1,66 @@
+/** @format */
+
+.containar {
+	display: flex;
+	justify-content: center;
+	padding: 100px;
+}
+
+.metrics-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	width: 900px;
+	height: 500px;
+	justify-content: center;
+	margin: auto 300px;
+}
+
+.row {
+	display: flex;
+	width: 100%;
+}
+
+.metric {
+	flex: 1;
+	padding: 10px;
+	color: black;
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+.metric:hover {
+	background-color: #e0e0e0;
+}
+
+.row-sum {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border: 1px solid wheat;
+	padding: 10px 20px;
+	width: 50px;
+}
+
+.colsum-div {
+	display: flex;
+}
+
+.col-sum {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border: 1px solid wheat;
+	padding: 10px 20px;
+	width: 50px;
+}
+
+.buttons-div {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	padding: 10px;
+	margin-top: 100px;
+}
