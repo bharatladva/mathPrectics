@@ -40,49 +40,51 @@ const MetricsGrid = () => {
 
 	return (
 		<div className='container'>
-			<div className='metrics-grid'>
-				{metrics.map((row, rowIndex) => (
-					<div
-						key={rowIndex}
-						className='row'
-					>
-						{row.map((metric, colIndex) => (
-							<div
-								key={colIndex}
-								className='metric'
-							>
-								{metric}
-							</div>
-						))}
-						{showRowSum && (
-							<div className='row-sum'>
-								<span>{row.reduce((acc, val) => acc + val, 0)}</span>
-							</div>
-						)}
-					</div>
-				))}
-				{showColSum && (
-					<div className='colsum-div'>
-						{metrics.length > 0 &&
-							metrics[0].map((_, colIndex) => (
-								<span
-									className='col-sum'
+			<div className='main'>
+				<div className='metrics-grid'>
+					{metrics.map((row, rowIndex) => (
+						<div
+							key={rowIndex}
+							className='row'
+						>
+							{row.map((metric, colIndex) => (
+								<div
 									key={colIndex}
+									className='metric'
 								>
-									{metrics.reduce((acc, row) => acc + row[colIndex], 0)}
-								</span>
+									{metric}
+								</div>
 							))}
-					</div>
-				)}
-			</div>
-			<div className='buttons-div'>
-				<button onClick={randomizeMetrics}>Randomize Table</button>
-				<button onClick={toggleRowSum}>
-					{showRowSum ? "Hide Row Sum" : "Show Row Sum"}
-				</button>
-				<button onClick={toggleColSum}>
-					{showColSum ? "Hide Col Sum" : "Show Col Sum"}
-				</button>
+							{showRowSum && (
+								<div className='row-sum'>
+									<span>{row.reduce((acc, val) => acc + val, 0)}</span>
+								</div>
+							)}
+						</div>
+					))}
+					{showColSum && (
+						<div className='colsum-div'>
+							{metrics.length > 0 &&
+								metrics[0].map((_, colIndex) => (
+									<span
+										className='col-sum'
+										key={colIndex}
+									>
+										{metrics.reduce((acc, row) => acc + row[colIndex], 0)}
+									</span>
+								))}
+						</div>
+					)}
+				</div>
+				<div className='buttons-div'>
+					<button onClick={randomizeMetrics}>Randomize Table</button>
+					<button onClick={toggleRowSum}>
+						{showRowSum ? "Hide Row Sum" : "Show Row Sum"}
+					</button>
+					<button onClick={toggleColSum}>
+						{showColSum ? "Hide Col Sum" : "Show Col Sum"}
+					</button>
+				</div>
 			</div>
 		</div>
 	);
