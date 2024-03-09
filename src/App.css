@@ -54,6 +54,7 @@
 
 .colsum-div {
 	display: flex;
+	gap: 8px;
 }
 
 .col-sum {
