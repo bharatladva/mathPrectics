@@ -2,12 +2,13 @@
 
 .container {
 	display: flex;
-
+	justify-content: center;
 	position: relative;
+	align-items: center;
+	padding: 100px;
 }
 
 .main {
-	margin: auto 40%;
 	position: relative;
 	display: flex;
 	flex-direction: column;
