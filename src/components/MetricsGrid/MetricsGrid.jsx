@@ -1,6 +1,7 @@
 /** @format */
 
 import { useState, useEffect } from "react";
+import "./MetricsGrid.css";
 
 const MetricsGrid = () => {
 	const [metrics, setMetrics] = useState([]);

@@ -1,0 +1,33 @@
+/**
+ * TaskPage.css
+ *
+ * @format
+ */
+
+.task-page {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+	width: 15vw;
+}
+
+.task-list {
+	display: grid;
+
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 20px;
+}
+
+.task-item {
+	background-color: #f0f0f0;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item h2 {
+	color: #333;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+/* You can further customize the styles based on your preference */
