@@ -5,7 +5,7 @@
 	justify-content: center;
 	position: relative;
 	align-items: center;
-	padding: 100px 0;
+	padding: 50px 0;
 	width: 85vw;
 }
 
@@ -34,6 +34,7 @@
 	flex: 1;
 	padding: 10px;
 	color: black;
+	font-size: 1.2rem;
 	background-color: #f0f0f0;
 	border: 1px solid #ccc;
 	text-align: center;
@@ -72,5 +73,33 @@
 	justify-content: center;
 	gap: 10px;
 	padding: 10px;
-	margin-top: 100px;
+}
+
+/* ---------------------- */
+.userInput {
+	height: fit-content;
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+}
+.nine-input-box {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	justify-content: center;
+	align-items: center;
+}
+
+.input {
+	width: 40px;
+	height: 30px;
+	text-align: center;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+}
+
+.input:focus {
+	border-color: dodgerblue;
 }
