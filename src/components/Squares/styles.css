@@ -1,0 +1,25 @@
+/** @format */
+
+.powers-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 100px;
+}
+
+.power {
+	margin: 10px;
+	padding: 15px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: black;
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	width: 120px;
+}
+
+.power sup {
+	font-size: 0.8em;
+}
