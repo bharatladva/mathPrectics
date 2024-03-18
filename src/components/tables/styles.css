@@ -1,0 +1,35 @@
+/** @format */
+
+.multiplication-chart {
+	font-family: Arial, sans-serif;
+	margin: 20px auto;
+	color: black;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th,
+td {
+	border: 1px solid #aaa;
+	padding: 8px;
+	text-align: center;
+}
+
+th {
+	background-color: #f0f0f0;
+	font-weight: bold;
+}
+
+td {
+	background-color: #fff;
+}
+
+tr:nth-child(even) td {
+	background-color: #f9f9f9;
+}
+
+tr:hover td {
+	background-color: #e0e0e0;
+}

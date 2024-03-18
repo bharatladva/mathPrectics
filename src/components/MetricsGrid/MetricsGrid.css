@@ -84,10 +84,14 @@
 }
 .nine-input-box {
 	display: flex;
+	margin-bottom: 5px;
 	flex-wrap: wrap;
 	gap: 5px;
 	justify-content: center;
 	align-items: center;
+}
+.sum-values {
+	position: absolute;
 }
 
 .input {
