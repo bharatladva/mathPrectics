@@ -33,16 +33,16 @@
 .metric {
 	flex: 1;
 	padding: 10px;
-	color: black;
-	font-size: 1.2rem;
-	background-color: #f0f0f0;
+	color: #cfb9b9;
+	font-size: 1.25rem;
+
 	border: 1px solid #ccc;
 	text-align: center;
 	font-family: Arial, sans-serif;
 }
 
 .metric:hover {
-	background-color: #e0e0e0;
+	background-color: #686060;
 }
 
 .row-sum {

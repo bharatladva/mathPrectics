@@ -18,14 +18,14 @@
 }
 
 .task-item {
-	background-color: #f0f0f0;
-	padding: 20px;
+	border: 1px dashed white;
+	padding: 0 20px;
 	border-radius: 8px;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .task-item h2 {
-	color: #333;
+	color: #cfb9b9;
 	font-size: 18px;
 	margin-bottom: 10px;
 }

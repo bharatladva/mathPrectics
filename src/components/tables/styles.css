@@ -1,35 +1,46 @@
 /** @format */
 
-.multiplication-chart {
+.multiplication-table {
 	font-family: Arial, sans-serif;
-	margin: 20px auto;
-	color: black;
+	/*max-width: 300px;*/
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 0 100px;
 }
 
 table {
+	width: 140px;
 	border-collapse: collapse;
 }
 
 th,
 td {
-	border: 1px solid #aaa;
 	padding: 8px;
+	font-size: 1.2rem;
 	text-align: center;
+	cursor: pointer;
+	width: fit-content;
 }
 
 th {
-	background-color: #f0f0f0;
-	font-weight: bold;
+	background-color: #f2f2f2;
 }
 
-td {
-	background-color: #fff;
+/*tr:nth-child(even) {
+	background-color: #f2f2f2;
+}*/
+
+tr {
+	border: 1px solid #ddd;
 }
 
-tr:nth-child(even) td {
-	background-color: #f9f9f9;
+tr:hover {
+	background-color: #564e4e;
 }
 
-tr:hover td {
-	background-color: #e0e0e0;
+/* Add a class for hovered cells */
+.multiplication-table td.hovered {
+	background-color: #564e4e;
 }
